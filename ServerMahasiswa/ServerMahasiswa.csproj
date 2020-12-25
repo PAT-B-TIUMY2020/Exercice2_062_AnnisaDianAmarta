@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92D8ECED-9677-4452-AFB2-C9A6356D3F6B}</ProjectGuid>
+    <ProjectGuid>{93F2AA2D-5B43-40A6-A267-068378ABC135}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Exercice_062_Annisa_Dian_Amarta</RootNamespace>
-    <AssemblyName>Exercice_062_Annisa Dian Amarta</AssemblyName>
+    <RootNamespace>ServerMahasiswa</RootNamespace>
+    <AssemblyName>ServerMahasiswa</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +45,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WcfServiceMahasiswa">
+      <HintPath>..\WcfServiceMahasiswa\bin\Debug\WcfServiceMahasiswa.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
